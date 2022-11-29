@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: web
+  name: simple-webapp-color
+  namespace: production
+spec:
+  ports:
+  - nodePort: 30008
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: web
+  type: NodePort
+status:
+  loadBalancer: {}
+
