@@ -8,5 +8,5 @@ https://kubernetes.github.io/ingress-nginx/deploy/#provider-specific-steps
 
 ## Notes
 
-* You have to create your Deploment and Service in the default namespace
+* You have to create your Deploment and Service in the same namespace with your Ingress controller
 
