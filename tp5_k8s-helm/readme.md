@@ -9,7 +9,7 @@ You can check it with **helm version**
 ## Add Bitnami repository and install Wordpress
 ```sh
 helm repo add bitnami https://charts.bitnami.com/bitnami
-helm install wordpress bitnami/wordpress -f values.yml
+helm install wordpress bitnami/wordpress -f https://raw.githubusercontent.com/juliosISTY/boocamp_devops_docker_tp2-minikube-k8s/main/tp5_k8s-helm/values.yml
 ```
 And then verify if services and pods are created and running in your k8s cluster
 Finaly, test in your browser
